@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EndEvent : MonoBehaviour
+namespace endEvent
 {
-    public UnityEvent end;
-
-    public void EndSituation()
+    public class EndEvent : MonoBehaviour
     {
-        end.Invoke();
+        public UnityEvent end;
+
+        public void EndSituation()
+        {
+            end.Invoke();
+        }
     }
+
 }

@@ -3,27 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+namespace playerHealth
 {
-    public float health;
-
-    public float maxHealth;
-
-    public Image healthBar;
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerHealth : MonoBehaviour
     {
-        maxHealth = health;
-    }
+        public float health;
 
-    // Update is called once per frame
-    void Update()
-    {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        public float maxHealth;
 
-        if (health <= 0)
+        public Image healthBar;
+        // Start is called before the first frame update
+        void Start()
         {
-            Destroy(gameObject);
+            maxHealth = health;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
+

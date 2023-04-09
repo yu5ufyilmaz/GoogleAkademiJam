@@ -20,4 +20,12 @@ public class EnemyBulletScript2 : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().health -= 20;
+            Destroy(gameObject);
+        }
+    }
 }

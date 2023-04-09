@@ -23,4 +23,9 @@ public class NextLevel : MonoBehaviour
    {
       SceneManager.LoadScene("Credits");
    }
+
+   public void Back()
+   {
+      SceneManager.LoadScene("Entry");
+   }
 }

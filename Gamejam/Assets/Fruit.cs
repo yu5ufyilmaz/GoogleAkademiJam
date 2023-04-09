@@ -41,7 +41,7 @@ public class Fruit : MonoBehaviour
             var position = new Vector3(wanted, transform.position.y);
             GameObject gameObject = Instantiate(fruitPrefab, position, Quaternion.identity);
             yield return new WaitForSeconds(secondSpawn);
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject,1f);
         }
     }
     

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9025604669666657055}
   - component: {fileID: 2768774840971985968}
   - component: {fileID: 9025604669666657048}
-  - component: {fileID: 9025604669666657050}
   - component: {fileID: 9025604669666657053}
   - component: {fileID: 9025604669666657051}
   - component: {fileID: 915747745}
@@ -32,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 9025604669666657041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.62, y: 1.5, z: 0}
-  m_LocalScale: {x: 3.02, y: 3.02, z: 3.02}
+  m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9025604670492099392}
@@ -80,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 1168215961
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_Sprite: {fileID: 1270037192, guid: 663dbb3c6fa6b3c41a3dad512de2cebf, type: 3}
+  m_Color: {r: 0.13411017, g: 0.9150943, b: 0.06388391, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.560963, y: 2.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -120,32 +119,6 @@ MonoBehaviour:
   maxHealth: 25
   currentHealth: 0
   endObject: {fileID: 0}
---- !u!61 &9025604669666657050
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9025604669666657041}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!50 &9025604669666657053
 Rigidbody2D:
   serializedVersion: 4
